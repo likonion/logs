@@ -1,477 +1,262 @@
-root@OpenWrt:~# logread | grep -iE 'dns|resolver|nameserver|fallback'
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:29:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:30:10 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:30:26 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:30:39 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:46:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:47:10 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:47:38 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:49:22 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 12:50:11 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:19:33 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:22:20 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:25:12 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:28:07 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:34:30 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:36:13 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:36:43 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:37:20 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:37:21 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:46:44 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:47:51 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:48:04 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 13:49:14 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 13:49:15 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: reading /tmp/resolv.conf.d/resolv.conf.auto
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using nameserver 119.29.29.29#53
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using nameserver 8.8.8.8#53
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 14:12:57 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: exiting on receipt of SIGTERM
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: started, version 2.93 cache disabled
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: DNS service limited to local subnets
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using nameserver 127.0.0.1#7874
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
-Tue Sep 29 14:13:24 2026 daemon.info dnsmasq[1]: read /tmp/hosts/odhcpd.hosts.lan - 0 names
+root@OpenWrt:~# tcpdump -ni any -nn 'port 53 or host 1.1.1.1 or host 8.8.8.8 or host 223.5.5.5 
+or host 119.29.29.29 or host 218.85.152.99 or host 218.85.157.99'
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+03:37:17.773291 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [S], seq 1172218192, win 65495, options [mss 65495,sackOK,TS val 1730731389 ecr 0,nop,wscale 7], length 0
+03:37:17.773309 lo    In  IP 127.0.0.1.53 > 127.0.0.1.39060: Flags [S.], seq 1241415220, ack 1172218193, win 65483, options [mss 65495,sackOK,TS val 4075176935 ecr 1730731389,nop,wscale 7], length 0
+03:37:17.773310 lo    In  IP 127.0.0.1.40733 > 127.0.0.1.53: 38792+ A? chatgpt.com. (29)
+03:37:17.773325 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1730731389 ecr 4075176935], length 0
+03:37:17.773452 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [P.], seq 1:32, ack 1, win 512, options [nop,nop,TS val 1730731390 ecr 4075176935], length 31 38792+ A? chatgpt.com. (29)
+03:37:17.773461 lo    In  IP 127.0.0.1.53 > 127.0.0.1.39060: Flags [.], ack 32, win 512, options [nop,nop,TS val 4075176936 ecr 1730731390], length 0
+03:37:17.774130 lo    In  IP 127.0.0.1.53 > 127.0.0.1.40733: 38792* 1/0/0 A 198.18.3.188 (45)
+03:37:17.774162 lo    In  IP 127.0.0.1.53 > 127.0.0.1.39060: Flags [P.], seq 1:48, ack 32, win 512, options [nop,nop,TS val 4075176936 ecr 1730731390], length 47 38792* 1/0/0 A 198.18.3.188 (45)
+03:37:17.774168 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [.], ack 48, win 512, options [nop,nop,TS val 1730731390 ecr 4075176936], length 0
+03:37:17.774299 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [F.], seq 32, ack 48, win 512, options [nop,nop,TS val 1730731390 ecr 4075176936], length 0
+03:37:17.774355 lo    In  IP 127.0.0.1.53 > 127.0.0.1.39060: Flags [F.], seq 48, ack 33, win 512, options [nop,nop,TS val 4075176936 ecr 1730731390], length 0
+03:37:17.774366 lo    In  IP 127.0.0.1.39060 > 127.0.0.1.53: Flags [.], ack 49, win 512, options [nop,nop,TS val 1730731390 ecr 4075176936], length 0
+03:37:26.301947 br-lan Out IP 192.168.31.2.60969 > 119.29.29.29.53: 63421+ A? ns.xpnana.com. (31)
+03:37:26.301950 eth0  Out IP 192.168.31.2.60969 > 119.29.29.29.53: 63421+ A? ns.xpnana.com. (31)
+03:37:26.302081 br-lan Out IP 192.168.31.2.34926 > 223.5.5.5.53: 63421+ A? ns.xpnana.com. (31)
+03:37:26.302083 eth0  Out IP 192.168.31.2.34926 > 223.5.5.5.53: 63421+ A? ns.xpnana.com. (31)
+03:37:26.324589 eth0  In  IP 119.29.29.29.53 > 192.168.31.2.60969: 63421 3/0/0 CNAME ns.opnsns.org., CNAME dx.opnsns.org., A 64.204.66.182 (91)
+03:37:26.324595 br-lan In  IP 119.29.29.29.53 > 192.168.31.2.60969: 63421 3/0/0 CNAME ns.opnsns.org., CNAME dx.opnsns.org., A 64.204.66.182 (91)
+03:37:26.381600 eth0  In  IP 223.5.5.5.53 > 192.168.31.2.34926: 63421 3/0/0 CNAME ns.opnsns.org., CNAME dx.opnsns.org., A 64.204.66.182 (101)
+03:37:26.381608 br-lan In  IP 223.5.5.5.53 > 192.168.31.2.34926: 63421 3/0/0 CNAME ns.opnsns.org., CNAME dx.opnsns.org., A 64.204.66.182 (101)
+03:37:26.381697 br-lan Out IP 192.168.31.2 > 223.5.5.5: ICMP 192.168.31.2 udp port 34926 unreachable, length 137
+03:37:26.381703 eth0  Out IP 192.168.31.2 > 223.5.5.5: ICMP 192.168.31.2 udp port 34926 unreachable, length 137
+03:37:26.959833 eth0  In  IP 192.168.31.3.51530 > 192.168.31.2.53: 31379+ A? www.google.com. (32)
+03:37:26.959837 br-lan In  IP 192.168.31.3.51530 > 192.168.31.2.53: 31379+ A? www.google.com. (32)
+03:37:26.960233 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.51530: 31379* 1/0/0 A 198.18.0.36 (48)
+03:37:26.960237 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.51530: 31379* 1/0/0 A 198.18.0.36 (48)
+03:37:26.960700 eth0  In  IP 192.168.31.3.59231 > 192.168.31.2.53: 45060+ AAAA? www.google.com. (32)
+03:37:26.960701 br-lan In  IP 192.168.31.3.59231 > 192.168.31.2.53: 45060+ AAAA? www.google.com. (32)
+03:37:26.961082 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.59231: 45060* 0/0/0 (32)
+03:37:26.961085 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.59231: 45060* 0/0/0 (32)
+03:37:28.944634 eth0  In  IP 192.168.31.176.65331 > 192.168.31.2.53: 61102+ HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.944636 br-lan In  IP 192.168.31.176.65331 > 192.168.31.2.53: 61102+ HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.944978 eth0  In  IP 192.168.31.176.56387 > 192.168.31.2.53: 16919+ AAAA? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.944979 br-lan In  IP 192.168.31.176.56387 > 192.168.31.2.53: 16919+ AAAA? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.945364 eth0  In  IP 192.168.31.176.63277 > 192.168.31.2.53: 36801+ A? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.945367 br-lan In  IP 192.168.31.176.63277 > 192.168.31.2.53: 36801+ A? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (97)
+03:37:28.945728 br-lan Out IP 192.168.31.2.37797 > 218.85.152.99.53: 33221+ [1au] HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (108)
+03:37:28.945731 eth0  Out IP 192.168.31.2.37797 > 218.85.152.99.53: 33221+ [1au] HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (108)
+03:37:28.945839 br-lan Out IP 192.168.31.2.50574 > 218.85.157.99.53: 33221+ [1au] HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (108)
+03:37:28.945845 eth0  Out IP 192.168.31.2.50574 > 218.85.157.99.53: 33221+ [1au] HTTPS? alibaba-cn-pvg-00001.line-isp-province.oss-enet.aliyuncs.com.gds.alibabadns.com. (108)
+03:37:28.945856 br-lan Out IP 192.168.31.2.53 > 192.168.31.176.65331: 61102* 0/1/0 (144)
+03:37:28.945867 eth0  Out IP 192.168.31.2.53 > 192.168.31.176.65331: 61102* 0/1/0 (144)
+03:37:28.945894 br-lan Out IP 192.168.31.2.53 > 192.168.31.176.56387: 16919* 0/0/0 (97)
+03:37:28.945895 eth0  Out IP 192.168.31.2.53 > 192.168.31.176.56387: 16919* 0/0/0 (97)
+03:37:28.946260 br-lan Out IP 192.168.31.2.53 > 192.168.31.176.63277: 36801* 10/2/4 A 101.226.36.237, A 101.91.142.129, A 180.163.51.169, A 180.163.51.167, A 60.188.12.18, A 101.91.142.186, A 180.163.44.172, A 180.163.44.171, A 180.163.51.168, A 60.188.138.52 (363)
+03:37:28.946262 eth0  Out IP 192.168.31.2.53 > 192.168.31.176.63277: 36801* 10/2/4 A 101.226.36.237, A 101.91.142.129, A 180.163.51.169, A 180.163.51.167, A 60.188.12.18, A 101.91.142.186, A 180.163.44.172, A 180.163.44.171, A 180.163.51.168, A 60.188.138.52 (363)
+03:37:28.953054 eth0  In  IP 218.85.157.99.53 > 192.168.31.2.50574: 33221 0/1/0 (162)
+03:37:28.953057 br-lan In  IP 218.85.157.99.53 > 192.168.31.2.50574: 33221 0/1/0 (162)
+03:37:28.956030 eth0  In  IP 218.85.152.99.53 > 192.168.31.2.37797: 33221 0/1/0 (162)
+03:37:28.956031 br-lan In  IP 218.85.152.99.53 > 192.168.31.2.37797: 33221 0/1/0 (162)
+03:37:28.956061 br-lan Out IP 192.168.31.2 > 218.85.152.99: ICMP 192.168.31.2 udp port 37797 unreachable, length 198
+03:37:28.956062 eth0  Out IP 192.168.31.2 > 218.85.152.99: ICMP 192.168.31.2 udp port 37797 unreachable, length 198
+03:37:29.143274 eth0  In  IP 192.168.31.176.62380 > 192.168.31.2.53: 53127+ AAAA? gateway.fe.apple-dns.cn. (41)
+03:37:29.143276 br-lan In  IP 192.168.31.176.62380 > 192.168.31.2.53: 53127+ AAAA? gateway.fe.apple-dns.cn. (41)
+03:37:29.144153 br-lan Out IP 192.168.31.2.53 > 192.168.31.176.62380: 53127* 0/0/0 (41)
+03:37:29.144156 eth0  Out IP 192.168.31.2.53 > 192.168.31.176.62380: 53127* 0/0/0 (41)
+03:37:29.443432 lo    In  IP 127.0.0.1.36014 > 127.0.0.1.53: Flags [S], seq 2917218646, win 65495, options [mss 65495,sackOK,TS val 2646738099 ecr 0,nop,wscale 7], length 0
+03:37:29.443432 lo    In  IP 127.0.0.1.36010 > 127.0.0.1.53: Flags [S], seq 265992755, win 65495, options [mss 65495,sackOK,TS val 1605277475 ecr 0,nop,wscale 7], length 0
+03:37:29.443444 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36014: Flags [S.], seq 2189259601, ack 2917218647, win 65483, options [mss 65495,sackOK,TS val 4112273157 ecr 2646738099,nop,wscale 7], length 0
+03:37:29.443445 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36010: Flags [S.], seq 2047428899, ack 265992756, win 65483, options [mss 65495,sackOK,TS val 2789658407 ecr 1605277475,nop,wscale 7], length 0
+03:37:29.443455 lo    In  IP 127.0.0.1.36010 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1605277475 ecr 2789658407], length 0
+03:37:29.443455 lo    In  IP 127.0.0.1.36014 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 2646738099 ecr 4112273157], length 0
+03:37:29.443524 lo    In  IP 127.0.0.1.36014 > 127.0.0.1.53: Flags [P.], seq 1:37, ack 1, win 512, options [nop,nop,TS val 2646738099 ecr 4112273157], length 36 61983+ AAAA? mp.weixin.qq.com. (34)
+03:37:29.443530 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36014: Flags [.], ack 37, win 512, options [nop,nop,TS val 4112273157 ecr 2646738099], length 0
+03:37:29.443580 lo    In  IP 127.0.0.1.53035 > 127.0.0.1.53: 30263+ A? mp.weixin.qq.com. (34)
+03:37:29.443582 lo    In  IP 127.0.0.1.54180 > 127.0.0.1.53: 61983+ AAAA? mp.weixin.qq.com. (34)
+03:37:29.443610 lo    In  IP 127.0.0.1.36010 > 127.0.0.1.53: Flags [P.], seq 1:37, ack 1, win 512, options [nop,nop,TS val 1605277475 ecr 2789658407], length 36 30263+ A? mp.weixin.qq.com. (34)
+03:37:29.443615 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36010: Flags [.], ack 37, win 512, options [nop,nop,TS val 2789658407 ecr 1605277475], length 0
+03:37:29.444205 lo    In  IP 127.0.0.1.53 > 127.0.0.1.53035: 30263* 8/2/7 CNAME mpv6.weixin.qq.com., CNAME sz.mp.weixin.qq.com., A 101.227.133.172, A 101.89.49.42, A 101.91.22.114, A 101.89.49.171, A 61.151.226.28, A 101.91.40.80 (334)
+03:37:29.444240 lo    In  IP 127.0.0.1.53 > 127.0.0.1.54180: 61983* 0/0/0 (34)
+03:37:29.444460 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36014: Flags [P.], seq 1:37, ack 37, win 512, options [nop,nop,TS val 4112273158 ecr 2646738099], length 36 61983* 0/0/0 (34)
+03:37:29.444468 lo    In  IP 127.0.0.1.36014 > 127.0.0.1.53: Flags [.], ack 37, win 512, options [nop,nop,TS val 2646738100 ecr 4112273158], length 0
+03:37:29.444610 lo    In  IP 127.0.0.1.36014 > 127.0.0.1.53: Flags [R.], seq 37, ack 37, win 512, options [nop,nop,TS val 2646738100 ecr 4112273158], length 0
+03:37:29.444768 lo    In  IP 127.0.0.1.36010 > 127.0.0.1.53: Flags [F.], seq 37, ack 1, win 512, options [nop,nop,TS val 1605277476 ecr 2789658407], length 0
+03:37:29.445118 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36010: Flags [P.], seq 1:337, ack 38, win 512, options [nop,nop,TS val 2789658408 ecr 1605277476], length 336 30263* 8/2/7 CNAME mpv6.weixin.qq.com., CNAME sz.mp.weixin.qq.com., A 101.227.133.172, A 101.89.49.42, A 101.91.22.114, A 101.89.49.171, A 61.151.226.28, A 101.91.40.80 (334)
+03:37:29.445132 lo    In  IP 127.0.0.1.36010 > 127.0.0.1.53: Flags [R], seq 265992793, win 0, length 0
+03:37:29.498926 lo    In  IP 127.0.0.1.36024 > 127.0.0.1.53: Flags [S], seq 4159107988, win 65495, options [mss 65495,sackOK,TS val 1252417740 ecr 0,nop,wscale 7], length 0
+03:37:29.498953 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36024: Flags [S.], seq 623319043, ack 4159107989, win 65483, options [mss 65495,sackOK,TS val 3366575286 ecr 1252417740,nop,wscale 7], length 0
+03:37:29.498978 lo    In  IP 127.0.0.1.36024 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1252417740 ecr 3366575286], length 0
+03:37:29.499230 lo    In  IP 127.0.0.1.37135 > 127.0.0.1.53: 61186+ AAAA? sz.mp.weixin.qq.com. (37)
+03:37:29.499776 lo    In  IP 127.0.0.1.36024 > 127.0.0.1.53: Flags [P.], seq 1:40, ack 1, win 512, options [nop,nop,TS val 1252417741 ecr 3366575286], length 39 61186+ AAAA? sz.mp.weixin.qq.com. (37)
+03:37:29.499809 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36024: Flags [.], ack 40, win 512, options [nop,nop,TS val 3366575287 ecr 1252417741], length 0
+03:37:29.500644 lo    In  IP 127.0.0.1.53 > 127.0.0.1.37135: 61186* 0/0/0 (37)
+03:37:29.500916 lo    In  IP 127.0.0.1.36024 > 127.0.0.1.53: Flags [F.], seq 40, ack 1, win 512, options [nop,nop,TS val 1252417742 ecr 3366575287], length 0
+03:37:29.501053 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36024: Flags [P.], seq 1:40, ack 41, win 512, options [nop,nop,TS val 3366575288 ecr 1252417742], length 39 61186* 0/0/0 (37)
+03:37:29.501082 lo    In  IP 127.0.0.1.36024 > 127.0.0.1.53: Flags [R], seq 4159108029, win 0, length 0
+03:37:30.573596 eth0  In  IP 192.168.31.3.46603 > 192.168.31.2.53: 57734+ A? www.google.com. (32)
+03:37:30.573597 br-lan In  IP 192.168.31.3.46603 > 192.168.31.2.53: 57734+ A? www.google.com. (32)
+03:37:30.574015 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.46603: 57734* 1/0/0 A 198.18.0.36 (48)
+03:37:30.574017 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.46603: 57734* 1/0/0 A 198.18.0.36 (48)
+03:37:30.574379 eth0  In  IP 192.168.31.3.37500 > 192.168.31.2.53: 29633+ AAAA? www.google.com. (32)
+03:37:30.574380 br-lan In  IP 192.168.31.3.37500 > 192.168.31.2.53: 29633+ AAAA? www.google.com. (32)
+03:37:30.574880 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.37500: 29633* 0/0/0 (32)
+03:37:30.574882 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.37500: 29633* 0/0/0 (32)
+03:37:32.034474 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [S], seq 3021695284, win 65495, options [mss 65495,sackOK,TS val 1755491157 ecr 0,nop,wscale 7], length 0
+03:37:32.034502 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36034: Flags [S.], seq 53783152, ack 3021695285, win 65483, options [mss 65495,sackOK,TS val 1310606097 ecr 1755491157,nop,wscale 7], length 0
+03:37:32.034524 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1755491157 ecr 1310606097], length 0
+03:37:32.034538 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [S], seq 262737903, win 65495, options [mss 65495,sackOK,TS val 3193243028 ecr 0,nop,wscale 7], length 0
+03:37:32.034568 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36042: Flags [S.], seq 349060138, ack 262737904, win 65483, options [mss 65495,sackOK,TS val 961989829 ecr 3193243028,nop,wscale 7], length 0
+03:37:32.034592 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 3193243028 ecr 961989829], length 0
+03:37:32.034912 lo    In  IP 127.0.0.1.35248 > 127.0.0.1.53: 58597+ A? wx.qlogo.cn. (29)
+03:37:32.034989 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [P.], seq 1:32, ack 1, win 512, options [nop,nop,TS val 3193243028 ecr 961989829], length 31 54340+ AAAA? wx.qlogo.cn. (29)
+03:37:32.035003 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36042: Flags [.], ack 32, win 512, options [nop,nop,TS val 961989829 ecr 3193243028], length 0
+03:37:32.035072 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [P.], seq 1:32, ack 1, win 512, options [nop,nop,TS val 1755491157 ecr 1310606097], length 31 58597+ A? wx.qlogo.cn. (29)
+03:37:32.035081 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36034: Flags [.], ack 32, win 512, options [nop,nop,TS val 1310606097 ecr 1755491157], length 0
+03:37:32.035140 lo    In  IP 127.0.0.1.59191 > 127.0.0.1.53: 54340+ AAAA? wx.qlogo.cn. (29)
+03:37:32.036288 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36034: Flags [P.], seq 1:430, ack 32, win 512, options [nop,nop,TS val 1310606098 ecr 1755491157], length 429 58597* 10/2/9 CNAME mmsns.qpic.cn., CNAME 100.mmsns.tc.qq.com., A 113.105.162.202, A 183.61.179.108, A 113.105.162.191, A 183.61.179.70, A 183.61.179.71, A 183.61.179.69, A 121.12.169.124, A 183.61.179.109 (427)
+03:37:32.036304 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [.], ack 430, win 509, options [nop,nop,TS val 1755491158 ecr 1310606098], length 0
+03:37:32.036477 lo    In  IP 127.0.0.1.53 > 127.0.0.1.35248: 58597* 10/2/9 CNAME mmsns.qpic.cn., CNAME 100.mmsns.tc.qq.com., A 113.105.162.202, A 183.61.179.108, A 113.105.162.191, A 183.61.179.70, A 183.61.179.71, A 183.61.179.69, A 121.12.169.124, A 183.61.179.109 (427)
+03:37:32.036546 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36042: Flags [P.], seq 1:32, ack 32, win 512, options [nop,nop,TS val 961989831 ecr 3193243028], length 31 54340* 0/0/0 (29)
+03:37:32.036552 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [.], ack 32, win 512, options [nop,nop,TS val 3193243030 ecr 961989831], length 0
+03:37:32.036559 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [F.], seq 32, ack 430, win 512, options [nop,nop,TS val 1755491159 ecr 1310606098], length 0
+03:37:32.036586 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36034: Flags [F.], seq 430, ack 33, win 512, options [nop,nop,TS val 1310606099 ecr 1755491159], length 0
+03:37:32.036613 lo    In  IP 127.0.0.1.36034 > 127.0.0.1.53: Flags [.], ack 431, win 512, options [nop,nop,TS val 1755491159 ecr 1310606099], length 0
+03:37:32.036662 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [F.], seq 32, ack 32, win 512, options [nop,nop,TS val 3193243030 ecr 961989831], length 0
+03:37:32.036689 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36042: Flags [F.], seq 32, ack 33, win 512, options [nop,nop,TS val 961989831 ecr 3193243030], length 0
+03:37:32.036707 lo    In  IP 127.0.0.1.36042 > 127.0.0.1.53: Flags [.], ack 33, win 512, options [nop,nop,TS val 3193243030 ecr 961989831], length 0
+03:37:32.036889 lo    In  IP 127.0.0.1.53 > 127.0.0.1.59191: 54340* 0/0/0 (29)
+03:37:32.094426 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [S], seq 2496848268, win 65495, options [mss 65495,sackOK,TS val 4270499113 ecr 0,nop,wscale 7], length 0
+03:37:32.094435 lo    In  IP 127.0.0.1.36052 > 127.0.0.1.53: Flags [S], seq 4197349970, win 65495, options [mss 65495,sackOK,TS val 1691404547 ecr 0,nop,wscale 7], length 0
+03:37:32.094455 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36062: Flags [S.], seq 772644794, ack 2496848269, win 65483, options [mss 65495,sackOK,TS val 3224488059 ecr 4270499113,nop,wscale 7], length 0
+03:37:32.094465 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36052: Flags [S.], seq 1156011071, ack 4197349971, win 65483, options [mss 65495,sackOK,TS val 2976414676 ecr 1691404547,nop,wscale 7], length 0
+03:37:32.094480 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 4270499113 ecr 3224488059], length 0
+03:37:32.094488 lo    In  IP 127.0.0.1.36052 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1691404547 ecr 2976414676], length 0
+03:37:32.094630 lo    In  IP 127.0.0.1.39156 > 127.0.0.1.53: 22713+ A? badjs.weixinbridge.com. (40)
+03:37:32.094658 lo    In  IP 127.0.0.1.36066 > 127.0.0.1.53: Flags [S], seq 4047397145, win 65495, options [mss 65495,sackOK,TS val 3770683649 ecr 0,nop,wscale 7], length 0
+03:37:32.094665 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36066: Flags [S.], seq 3060457043, ack 4047397146, win 65483, options [mss 65495,sackOK,TS val 1570149607 ecr 3770683649,nop,wscale 7], length 0
+03:37:32.094672 lo    In  IP 127.0.0.1.36066 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 3770683649 ecr 1570149607], length 0
+03:37:32.094685 lo    In  IP 127.0.0.1.37993 > 127.0.0.1.53: 18014+ AAAA? 100.mmsns.tc.qq.com. (37)
+03:37:32.094735 lo    In  IP 127.0.0.1.52779 > 127.0.0.1.53: 27585+ AAAA? badjs.weixinbridge.com. (40)
+03:37:32.095450 lo    In  IP 127.0.0.1.36066 > 127.0.0.1.53: Flags [P.], seq 1:43, ack 1, win 512, options [nop,nop,TS val 3770683650 ecr 1570149607], length 42 27585+ AAAA? badjs.weixinbridge.com. (40)
+03:37:32.095467 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36066: Flags [.], ack 43, win 512, options [nop,nop,TS val 1570149608 ecr 3770683650], length 0
+03:37:32.095524 lo    In  IP 127.0.0.1.36052 > 127.0.0.1.53: Flags [P.], seq 1:40, ack 1, win 512, options [nop,nop,TS val 1691404548 ecr 2976414676], length 39 18014+ AAAA? 100.mmsns.tc.qq.com. (37)
+03:37:32.095532 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36052: Flags [.], ack 40, win 512, options [nop,nop,TS val 2976414677 ecr 1691404548], length 0
+03:37:32.095566 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [P.], seq 1:43, ack 1, win 512, options [nop,nop,TS val 4270499114 ecr 3224488059], length 42 22713+ A? badjs.weixinbridge.com. (40)
+03:37:32.095584 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36062: Flags [.], ack 43, win 512, options [nop,nop,TS val 3224488060 ecr 4270499114], length 0
+03:37:32.096172 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36062: Flags [P.], seq 1:246, ack 43, win 512, options [nop,nop,TS val 3224488060 ecr 4270499114], length 245 22713* 2/2/7 A 101.226.99.142, A 101.226.99.155 (243)
+03:37:32.096184 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [.], ack 246, win 511, options [nop,nop,TS val 4270499114 ecr 3224488060], length 0
+03:37:32.096415 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [F.], seq 43, ack 246, win 512, options [nop,nop,TS val 4270499115 ecr 3224488060], length 0
+03:37:32.096457 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36062: Flags [F.], seq 246, ack 44, win 512, options [nop,nop,TS val 3224488061 ecr 4270499115], length 0
+03:37:32.096472 lo    In  IP 127.0.0.1.36062 > 127.0.0.1.53: Flags [.], ack 247, win 512, options [nop,nop,TS val 4270499115 ecr 3224488061], length 0
+03:37:32.096817 lo    In  IP 127.0.0.1.53 > 127.0.0.1.39156: 22713* 2/2/7 A 101.226.99.142, A 101.226.99.155 (243)
+03:37:32.096924 lo    In  IP 127.0.0.1.53 > 127.0.0.1.37993: 18014* 0/0/0 (37)
+03:37:32.097095 lo    In  IP 127.0.0.1.36052 > 127.0.0.1.53: Flags [F.], seq 40, ack 1, win 512, options [nop,nop,TS val 1691404549 ecr 2976414677], length 0
+03:37:32.097263 lo    In  IP 127.0.0.1.53 > 127.0.0.1.52779: 27585* 0/0/0 (40)
+03:37:32.097723 lo    In  IP 127.0.0.1.36066 > 127.0.0.1.53: Flags [F.], seq 43, ack 1, win 512, options [nop,nop,TS val 3770683652 ecr 1570149608], length 0
+03:37:32.098396 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36052: Flags [P.], seq 1:40, ack 41, win 512, options [nop,nop,TS val 2976414680 ecr 1691404549], length 39 18014* 0/0/0 (37)
+03:37:32.098409 lo    In  IP 127.0.0.1.36052 > 127.0.0.1.53: Flags [R], seq 4197350011, win 0, length 0
+03:37:32.098630 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36066: Flags [P.], seq 1:43, ack 44, win 512, options [nop,nop,TS val 1570149611 ecr 3770683652], length 42 27585* 0/0/0 (40)
+03:37:32.098637 lo    In  IP 127.0.0.1.36066 > 127.0.0.1.53: Flags [R], seq 4047397189, win 0, length 0
+03:37:34.925247 eth0  In  IP 192.168.31.3.37901 > 192.168.31.2.53: 42799+ A? github.com. (28)
+03:37:34.925252 br-lan In  IP 192.168.31.3.37901 > 192.168.31.2.53: 42799+ A? github.com. (28)
+03:37:34.925785 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.37901: 42799* 1/0/0 A 198.18.0.7 (44)
+03:37:34.925789 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.37901: 42799* 1/0/0 A 198.18.0.7 (44)
+03:37:34.926350 eth0  In  IP 192.168.31.3.55611 > 192.168.31.2.53: 14378+ AAAA? github.com. (28)
+03:37:34.926351 br-lan In  IP 192.168.31.3.55611 > 192.168.31.2.53: 14378+ AAAA? github.com. (28)
+03:37:34.926667 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.55611: 14378* 0/0/0 (28)
+03:37:34.926671 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.55611: 14378* 0/0/0 (28)
+03:37:39.364527 eth0  In  IP 192.168.31.3.54534 > 192.168.31.2.53: 61989+ A? www.youtube.com. (33)
+03:37:39.364533 br-lan In  IP 192.168.31.3.54534 > 192.168.31.2.53: 61989+ A? www.youtube.com. (33)
+03:37:39.365234 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.54534: 61989* 1/0/0 A 198.18.0.6 (49)
+03:37:39.365236 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.54534: 61989* 1/0/0 A 198.18.0.6 (49)
+03:37:39.365688 eth0  In  IP 192.168.31.3.33074 > 192.168.31.2.53: 20239+ AAAA? www.youtube.com. (33)
+03:37:39.365692 br-lan In  IP 192.168.31.3.33074 > 192.168.31.2.53: 20239+ AAAA? www.youtube.com. (33)
+03:37:39.366034 br-lan Out IP 192.168.31.2.53 > 192.168.31.3.33074: 20239* 0/0/0 (33)
+03:37:39.366037 eth0  Out IP 192.168.31.2.53 > 192.168.31.3.33074: 20239* 0/0/0 (33)
+03:37:40.789266 lo    In  IP 127.0.0.1.34416 > 127.0.0.1.53: Flags [S], seq 1992057520, win 65495, options [mss 65495,sackOK,TS val 982785981 ecr 0,nop,wscale 7], length 0
+03:37:40.789294 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34416: Flags [S.], seq 1960455249, ack 1992057521, win 65483, options [mss 65495,sackOK,TS val 923758746 ecr 982785981,nop,wscale 7], length 0
+03:37:40.789319 lo    In  IP 127.0.0.1.34416 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 982785981 ecr 923758746], length 0
+03:37:40.789609 lo    In  IP 127.0.0.1.36416 > 127.0.0.1.53: 34803+ HTTPS? p224-caldav.icloud.com.cn. (43)
+03:37:40.790833 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [S], seq 1798185234, win 65495, options [mss 65495,sackOK,TS val 4244010068 ecr 0,nop,wscale 7], length 0
+03:37:40.790838 lo    In  IP 127.0.0.1.53 > 127.0.0.1.36416: 34803* 1/1/0 CNAME caldav.fe.apple-dns.cn. (167)
+03:37:40.790855 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34424: Flags [S.], seq 2183224128, ack 1798185235, win 65483, options [mss 65495,sackOK,TS val 3732387096 ecr 4244010068,nop,wscale 7], length 0
+03:37:40.790875 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 4244010068 ecr 3732387096], length 0
+03:37:40.790958 lo    In  IP 127.0.0.1.59233 > 127.0.0.1.53: 15346+ AAAA? p224-caldav.icloud.com.cn. (43)
+03:37:40.791015 lo    In  IP 127.0.0.1.34416 > 127.0.0.1.53: Flags [P.], seq 1:46, ack 1, win 512, options [nop,nop,TS val 982785983 ecr 923758746], length 45 34803+ HTTPS? p224-caldav.icloud.com.cn. (43)
+03:37:40.791029 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34416: Flags [.], ack 46, win 512, options [nop,nop,TS val 923758748 ecr 982785983], length 0
+03:37:40.791062 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [P.], seq 1:46, ack 1, win 512, options [nop,nop,TS val 4244010068 ecr 3732387096], length 45 15346+ AAAA? p224-caldav.icloud.com.cn. (43)
+03:37:40.791066 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34424: Flags [.], ack 46, win 512, options [nop,nop,TS val 3732387096 ecr 4244010068], length 0
+03:37:40.791185 lo    In  IP 127.0.0.1.34416 > 127.0.0.1.53: Flags [F.], seq 46, ack 1, win 512, options [nop,nop,TS val 982785983 ecr 923758748], length 0
+03:37:40.791725 br-lan Out IP 192.168.31.2.49853 > 218.85.152.99.53: 34683+ [1au] HTTPS? p224-caldav.icloud.com.cn. (54)
+03:37:40.791728 eth0  Out IP 192.168.31.2.49853 > 218.85.152.99.53: 34683+ [1au] HTTPS? p224-caldav.icloud.com.cn. (54)
+03:37:40.792150 br-lan Out IP 192.168.31.2.49983 > 218.85.157.99.53: 34683+ [1au] HTTPS? p224-caldav.icloud.com.cn. (54)
+03:37:40.792155 eth0  Out IP 192.168.31.2.49983 > 218.85.157.99.53: 34683+ [1au] HTTPS? p224-caldav.icloud.com.cn. (54)
+03:37:40.792263 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34424: Flags [P.], seq 1:46, ack 46, win 512, options [nop,nop,TS val 3732387097 ecr 4244010068], length 45 15346* 0/0/0 (43)
+03:37:40.792284 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [.], ack 46, win 512, options [nop,nop,TS val 4244010069 ecr 3732387097], length 0
+03:37:40.792417 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [F.], seq 46, ack 46, win 512, options [nop,nop,TS val 4244010070 ecr 3732387097], length 0
+03:37:40.792447 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34424: Flags [F.], seq 46, ack 47, win 512, options [nop,nop,TS val 3732387098 ecr 4244010070], length 0
+03:37:40.792465 lo    In  IP 127.0.0.1.34424 > 127.0.0.1.53: Flags [.], ack 47, win 512, options [nop,nop,TS val 4244010070 ecr 3732387098], length 0
+03:37:40.792561 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34416: Flags [P.], seq 1:170, ack 47, win 512, options [nop,nop,TS val 923758750 ecr 982785983], length 169 34803* 1/1/0 CNAME caldav.fe.apple-dns.cn. (167)
+03:37:40.792581 lo    In  IP 127.0.0.1.34416 > 127.0.0.1.53: Flags [R], seq 1992057567, win 0, length 0
+03:37:40.793624 lo    In  IP 127.0.0.1.53 > 127.0.0.1.59233: 15346* 0/0/0 (43)
+03:37:40.798755 eth0  In  IP 218.85.152.99.53 > 192.168.31.2.49853: 34683 1/1/0 CNAME caldav.fe.apple-dns.cn. (171)
+03:37:40.798760 br-lan In  IP 218.85.152.99.53 > 192.168.31.2.49853: 34683 1/1/0 CNAME caldav.fe.apple-dns.cn. (171)
+03:37:40.799004 eth0  In  IP 218.85.157.99.53 > 192.168.31.2.49983: 34683 1/1/0 CNAME caldav.fe.apple-dns.cn. (171)
+03:37:40.799006 br-lan In  IP 218.85.157.99.53 > 192.168.31.2.49983: 34683 1/1/0 CNAME caldav.fe.apple-dns.cn. (171)
+03:37:40.849548 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [S], seq 1767228291, win 65495, options [mss 65495,sackOK,TS val 1489055731 ecr 0,nop,wscale 7], length 0
+03:37:40.849578 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34426: Flags [S.], seq 1066446588, ack 1767228292, win 65483, options [mss 65495,sackOK,TS val 3989313381 ecr 1489055731,nop,wscale 7], length 0
+03:37:40.849601 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1489055731 ecr 3989313381], length 0
+03:37:40.849765 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [S], seq 678239384, win 65495, options [mss 65495,sackOK,TS val 1624092600 ecr 0,nop,wscale 7], length 0
+03:37:40.849795 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34438: Flags [S.], seq 391807725, ack 678239385, win 65483, options [mss 65495,sackOK,TS val 2858381718 ecr 1624092600,nop,wscale 7], length 0
+03:37:40.849822 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 1624092600 ecr 2858381718], length 0
+03:37:40.849926 lo    In  IP 127.0.0.1.60311 > 127.0.0.1.53: 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.849980 lo    In  IP 127.0.0.1.46158 > 127.0.0.1.53: 55053+ AAAA? caldav.fe.apple-dns.cn. (40)
+03:37:40.850152 lo    In  IP 127.0.0.1.34440 > 127.0.0.1.53: Flags [S], seq 1635917429, win 65495, options [mss 65495,sackOK,TS val 3248003147 ecr 0,nop,wscale 7], length 0
+03:37:40.850167 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34440: Flags [S.], seq 2475045550, ack 1635917430, win 65483, options [mss 65495,sackOK,TS val 3882542631 ecr 3248003147,nop,wscale 7], length 0
+03:37:40.850182 lo    In  IP 127.0.0.1.34440 > 127.0.0.1.53: Flags [.], ack 1, win 512, options [nop,nop,TS val 3248003147 ecr 3882542631], length 0
+03:37:40.850276 lo    In  IP 127.0.0.1.41850 > 127.0.0.1.53: 1906+ HTTPS? caldav.fe.apple-dns.cn. (40)
+03:37:40.850347 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [P.], seq 1:43, ack 1, win 512, options [nop,nop,TS val 1624092600 ecr 2858381718], length 42 55053+ AAAA? caldav.fe.apple-dns.cn. (40)
+03:37:40.850403 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34438: Flags [.], ack 43, win 512, options [nop,nop,TS val 2858381718 ecr 1624092600], length 0
+03:37:40.850504 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [P.], seq 1:46, ack 1, win 512, options [nop,nop,TS val 1489055732 ecr 3989313381], length 45 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.850530 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34426: Flags [.], ack 46, win 512, options [nop,nop,TS val 3989313382 ecr 1489055732], length 0
+03:37:40.850970 lo    In  IP 127.0.0.1.34440 > 127.0.0.1.53: Flags [P.], seq 1:43, ack 1, win 512, options [nop,nop,TS val 3248003148 ecr 3882542631], length 42 1906+ HTTPS? caldav.fe.apple-dns.cn. (40)
+03:37:40.850976 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34440: Flags [.], ack 43, win 512, options [nop,nop,TS val 3882542632 ecr 3248003148], length 0
+03:37:40.852081 br-lan Out IP 192.168.31.2.35379 > 218.85.157.99.53: 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.852086 eth0  Out IP 192.168.31.2.35379 > 218.85.157.99.53: 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.852578 br-lan Out IP 192.168.31.2.47313 > 218.85.152.99.53: 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.852580 eth0  Out IP 192.168.31.2.47313 > 218.85.152.99.53: 33658+ A? p224-caldav.icloud.com.cn. (43)
+03:37:40.852665 br-lan Out IP 192.168.31.2.35109 > 218.85.152.99.53: 133+ [1au] HTTPS? caldav.fe.apple-dns.cn. (51)
+03:37:40.852667 eth0  Out IP 192.168.31.2.35109 > 218.85.152.99.53: 133+ [1au] HTTPS? caldav.fe.apple-dns.cn. (51)
+03:37:40.852746 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34426: Flags [P.], seq 1:473, ack 46, win 512, options [nop,nop,TS val 3989313384 ecr 1489055732], length 472 33658* 7/6/6 CNAME caldav.fe.apple-dns.cn., A 36.110.170.116, A 36.110.170.112, A 36.110.170.248, A 36.110.170.244, A 36.110.170.120, A 36.110.170.240 (470)
+03:37:40.852771 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [.], ack 473, win 509, options [nop,nop,TS val 1489055734 ecr 3989313384], length 0
+03:37:40.852850 br-lan Out IP 192.168.31.2.56967 > 218.85.157.99.53: 133+ [1au] HTTPS? caldav.fe.apple-dns.cn. (51)
+03:37:40.852855 eth0  Out IP 192.168.31.2.56967 > 218.85.157.99.53: 133+ [1au] HTTPS? caldav.fe.apple-dns.cn. (51)
+03:37:40.852937 lo    In  IP 127.0.0.1.53 > 127.0.0.1.60311: 33658* 7/6/6 CNAME caldav.fe.apple-dns.cn., A 36.110.170.116, A 36.110.170.112, A 36.110.170.248, A 36.110.170.244, A 36.110.170.120, A 36.110.170.240 (470)
+03:37:40.852955 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34438: Flags [P.], seq 1:43, ack 43, win 512, options [nop,nop,TS val 2858381721 ecr 1624092600], length 42 55053* 0/0/0 (40)
+03:37:40.852970 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [.], ack 43, win 512, options [nop,nop,TS val 1624092603 ecr 2858381721], length 0
+03:37:40.852988 lo    In  IP 127.0.0.1.53 > 127.0.0.1.46158: 55053* 0/0/0 (40)
+03:37:40.853015 lo    In  IP 127.0.0.1.53 > 127.0.0.1.41850: 1906* 0/1/0 (130)
+03:37:40.853281 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [F.], seq 43, ack 43, win 512, options [nop,nop,TS val 1624092603 ecr 2858381721], length 0
+03:37:40.853321 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34438: Flags [F.], seq 43, ack 44, win 512, options [nop,nop,TS val 2858381721 ecr 1624092603], length 0
+03:37:40.853341 lo    In  IP 127.0.0.1.34438 > 127.0.0.1.53: Flags [.], ack 44, win 512, options [nop,nop,TS val 1624092603 ecr 2858381721], length 0
+03:37:40.853835 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [F.], seq 46, ack 473, win 512, options [nop,nop,TS val 1489055735 ecr 3989313384], length 0
+03:37:40.853937 lo    In  IP 127.0.0.1.34440 > 127.0.0.1.53: Flags [F.], seq 43, ack 1, win 512, options [nop,nop,TS val 3248003151 ecr 3882542632], length 0
+03:37:40.853985 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34426: Flags [F.], seq 473, ack 47, win 512, options [nop,nop,TS val 3989313385 ecr 1489055735], length 0
+03:37:40.854001 lo    In  IP 127.0.0.1.34426 > 127.0.0.1.53: Flags [.], ack 474, win 512, options [nop,nop,TS val 1489055735 ecr 3989313385], length 0
+03:37:40.854559 lo    In  IP 127.0.0.1.53 > 127.0.0.1.34440: Flags [P.], seq 1:133, ack 44, win 512, options [nop,nop,TS val 3882542636 ecr 3248003151], length 132 1906* 0/1/0 (130)
+03:37:40.854574 lo    In  IP 127.0.0.1.34440 > 127.0.0.1.53: Flags [R], seq 1635917473, win 0, length 0
+03:37:40.859227 eth0  In  IP 218.85.152.99.53 > 192.168.31.2.47313: 33658 9/6/5 CNAME caldav.fe.apple-dns.cn., A 125.88.197.240, A 125.88.197.112, A 125.88.197.120, A 125.88.197.116, A 125.88.197.248, A 125.88.197.244, A 125.88.197.108, A 125.88.197.252 (490)
+03:37:40.859230 br-lan In  IP 218.85.152.99.53 > 192.168.31.2.47313: 33658 9/6/5 CNAME caldav.fe.apple-dns.cn., A 125.88.197.240, A 125.88.197.112, A 125.88.197.120, A 125.88.197.116, A 125.88.197.248, A 125.88.197.244, A 125.88.197.108, A 125.88.197.252 (490)
+03:37:40.859336 eth0  In  IP 218.85.152.99.53 > 192.168.31.2.35109: 133 0/1/0 (132)
+03:37:40.859337 br-lan In  IP 218.85.152.99.53 > 192.168.31.2.35109: 133 0/1/0 (132)
+03:37:40.859528 eth0  In  IP 218.85.157.99.53 > 192.168.31.2.56967: 133 0/1/0 (132)
+03:37:40.859530 br-lan In  IP 218.85.157.99.53 > 192.168.31.2.56967: 133 0/1/0 (132)
+03:37:40.859562 br-lan Out IP 192.168.31.2 > 218.85.157.99: ICMP 192.168.31.2 udp port 56967 unreachable, length 168
+03:37:40.859566 eth0  Out IP 192.168.31.2 > 218.85.157.99: ICMP 192.168.31.2 udp port 56967 unreachable, length 168
+03:37:40.860776 eth0  In  IP 218.85.157.99.53 > 192.168.31.2.35379: 33658 7/6/6 CNAME caldav.fe.apple-dns.cn., A 36.110.170.244, A 36.110.170.240, A 36.110.170.112, A 36.110.170.116, A 36.110.170.248, A 36.110.170.120 (474)
+03:37:40.860778 br-lan In  IP 218.85.157.99.53 > 192.168.31.2.35379: 33658 7/6/6 CNAME caldav.fe.apple-dns.cn., A 36.110.170.244, A 36.110.170.240, A 36.110.170.112, A 36.110.170.116, A 36.110.170.248, A 36.110.170.120 (474)
+03:37:40.860810 br-lan Out IP 192.168.31.2 > 218.85.157.99: ICMP 192.168.31.2 udp port 35379 unreachable, length 510
+03:37:40.860813 eth0  Out IP 192.168.31.2 > 218.85.157.99: ICMP 192.168.31.2 udp port 35379 unreachable, length 510
+03:37:41.528987 tailscale0 In  IP 100.75.245.114.53418 > 119.29.29.29.53: 20429+ AAAA? usg1-connect-kvil0so5.node.biliimages.org. (59)
+03:37:41.529048 tailscale0 In  IP 100.75.245.114.49379 > 223.5.5.5.53: 20429+ AAAA? usg1-connect-kvil0so5.node.biliimages.org. (59)
+03:37:41.529079 tailscale0 In  IP 100.75.245.114.59700 > 119.29.29.29.53: 20708+ A? usg1-connect-kvil0so5.node.biliimages.org. (59)
+03:37:41.529093 tailscale0 In  IP 100.75.245.114.56134 > 223.5.5.5.53: 20708+ A? usg1-connect-kvil0so5.node.biliimages.org. (59)
+^C
+254 packets captured
